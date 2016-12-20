@@ -1,0 +1,18 @@
+********** 2:00:27 PM **********
+Exception Type: System.ArgumentNullException
+Exception: Value cannot be null.
+Parameter name: value
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   at StructuredProductMonograph.Models.ComponentRepository.CreateComponent(Section item) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\ComponentRepository.cs:line 79
+   at StructuredProductMonograph.Controller.spmController.createComponentBySectionList(CodeEnum codeName, List`1 list) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 139
+   at StructuredProductMonograph.titlePage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\titlePage.aspx.cs:line 832
+
+********** 3:17:27 PM **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: titlePage-SaveDraftForm()
+Stack Trace: 
+   at StructuredProductMonograph.titlePage.SaveDraftForm() in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\titlePage.aspx.cs:line 269
+

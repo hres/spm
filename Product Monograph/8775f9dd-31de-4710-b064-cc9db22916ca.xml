@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xsl-stylesheet type="text/xsl" href="http://www.accessdata.hc.ca/spl/stylesheet/spl.xsl"?>
+<?xsl-stylesheet type="text/css" href="http://www.accessdata.hc.ca/spl/stylesheet/spl.css"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd" xmlns="urn:hl7-org:v3">
+  <typeId assigningAuthorityName="Health Canada"></typeId>
+  <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+  <code code="1" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.10" displayName="2004 Product Monograph Template – Standard"></code>
+  <title>jangyoung's form</title>
+  <effectiveTime value="20161208"></effectiveTime>
+  <languageCode code="eng" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.30" displayName="English"></languageCode>
+  <setId root="3b7b5c2d-8dd6-4b61-a351-ac784157b679"></setId>
+  <versionNumber>0.1</versionNumber>
+  <author>
+    <time></time>
+    <assignedEntity>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.3.989.5.1.4.1.33" extension="999999999"></id>
+        <id root="2.16.840.1.113883.3.989.5.1.4.1.35" extension="1"></id>
+        <id root="2.16.840.1.113883.3.989.5.1.4.1.31" extension="???"></id>
+        <name>ABC Company</name>
+        <contactParty>
+          <addr>
+            <streetAddressLine>123 Bank street</streetAddressLine>
+            <city>Ottawa</city>
+            <state>On</state>
+            <postalCode>K2S 2B8</postalCode>
+            <country>Can</country>
+          </addr>
+          <telecom value="tel:+613-805-0406"></telecom>
+          <telecom value="mailto:jangyoung.yoo@gmail.com"></telecom>
+          <contactPerson>
+            <name>Jangyoung, Yoo</name>
+          </contactPerson>
+        </contactParty>
+      </representedOrganization>
+    </assignedEntity>
+  </author>
+  <component>
+    <structuredBody>
+      <component>
+        <section ID="e6f819d7-07be-49bd-a142-5ca75bdacd18">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="450" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Title Page"></code>
+          <title>Title Page</title>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="47e272fc-69ad-466a-907b-a484ff99b8e8">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="460" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Title Block"></code>
+          <title>Title Block</title>
+          <text>jangyoung's form</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="1fa6b2fc-9486-4672-b836-e11e60f1fe1f">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="110" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Pharmaceutical Standard"></code>
+          <title>Pharmaceutical Standard</title>
+          <text>aa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="5a820f07-5998-42cb-bbb6-b2b279ea6c64">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="120" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Therapeutic Classification"></code>
+          <title>Therapeutic Classification</title>
+          <text>bb</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="005f25cb-2d83-47b4-be7f-81416fcd72ef">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="150" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Date of Preparation"></code>
+          <title>Date of Preparation</title>
+          <text>2016-12-07</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="96f70857-72ec-4b0e-827b-456e51753d8a">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="160" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Date of Revision"></code>
+          <title>Date of Revision</title>
+          <text>2016-12-07</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="99602ee2-642a-45f2-a04e-2b60a9bd68eb">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="170" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Submission Control Number"></code>
+          <title>Submission Control Number</title>
+          <text>1234</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="1f49abc3-c502-4a14-8add-9f8d586058a6">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="440" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Footnote"></code>
+          <title>Footnote</title>
+          <text>aaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="aeff8a84-4bee-416e-a866-8bdd44d379cc">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="20" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Part I: Health Professional Information"></code>
+          <title>Part I: Health Professional Information</title>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="4f533d6e-7196-4a40-a92d-1b0157a1d728">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="180" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Summary Product Information"></code>
+          <title>Summary Product Information</title>
+          <text>aaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="428ffa47-04ac-4a4e-8775-9bed4dd67c0d">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="200" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Contradictions"></code>
+          <title>Contradictions</title>
+          <text>bbb</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="3babecf4-4b4a-4962-852d-f241a79262da">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="220" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Adverse Reactions"></code>
+          <title>Adverse Reactions</title>
+          <text>aaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+          <component>
+            <section ID="b0f43c27-c183-4884-bf1b-d3b999ec4603">
+              <id root="3babecf4-4b4a-4962-852d-f241a79262da"></id>
+              <code code="220-10" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Adverse Drug Reaction (ADR) Overview"></code>
+              <title>Adverse Drug Reaction (ADR) Overview</title>
+              <text>bbb</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="f218736c-851d-4962-8555-0c84bb441885">
+              <id root="3babecf4-4b4a-4962-852d-f241a79262da"></id>
+              <code code="220-20" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Clinical Trial Adverse Drug Reactions"></code>
+              <title>Clinical Trial Adverse Drug Reactions</title>
+              <text>ccc</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="1374dcf9-9085-4fc2-883f-51dc6f580c32">
+              <id root="3babecf4-4b4a-4962-852d-f241a79262da"></id>
+              <code code="220-30" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Less Common Clinical Trial Adverse Drug Reactions"></code>
+              <title>Less Common Clinical Trial Adverse Drug Reactions</title>
+              <text>ddd</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="6e476973-2719-4344-a521-8862fe0dc872">
+              <id root="3babecf4-4b4a-4962-852d-f241a79262da"></id>
+              <code code="220-40" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Abnormal Hematologic And Clinical Chemistry "></code>
+              <title>Abnormal Hematologic And Clinical Chemistry </title>
+              <text>eee</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="d605fa2b-62aa-4e42-bb5d-1c7632c83518">
+              <id root="3babecf4-4b4a-4962-852d-f241a79262da"></id>
+              <code code="220-50" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Post-Market Adverse Drug Reactions"></code>
+              <title>Post-Market Adverse Drug Reactions</title>
+              <text>fff</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="1e977c5f-2ee5-45dc-8cfe-017e4cfe59f3">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="230" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Drug Interactions"></code>
+          <title>Drug Interactions</title>
+          <text>aaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+          <component>
+            <section ID="d2d55794-aad2-4251-a206-29efb989edec">
+              <id root="1e977c5f-2ee5-45dc-8cfe-017e4cfe59f3"></id>
+              <code code="230-80" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Overview"></code>
+              <title>Overview</title>
+              <text>bbb</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="0305ae87-1977-434c-bfc0-07f0ad825ba7">
+              <id root="1e977c5f-2ee5-45dc-8cfe-017e4cfe59f3"></id>
+              <code code="230-10" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Drug-Drug Interactions"></code>
+              <title>Drug-Drug Interactions</title>
+              <text>ccc</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="5435ddcb-6cec-4a7f-a570-3bed7d7ddec5">
+              <id root="1e977c5f-2ee5-45dc-8cfe-017e4cfe59f3"></id>
+              <code code="230-20" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Drug-Food Interactions"></code>
+              <title>Drug-Food Interactions</title>
+              <text>ddd</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="a748d427-604a-4af2-a56b-c99f24572abf">
+              <id root="1e977c5f-2ee5-45dc-8cfe-017e4cfe59f3"></id>
+              <code code="230-30" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Drug-Herb Interactions"></code>
+              <title>Drug-Herb Interactions</title>
+              <text>eee</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="d745d796-0854-4fed-b957-ee1538fc33e6">
+              <id root="1e977c5f-2ee5-45dc-8cfe-017e4cfe59f3"></id>
+              <code code="230-40" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Drug-Laboratory Test Interactions"></code>
+              <title>Drug-Laboratory Test Interactions</title>
+              <text>fff</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="e5af75e3-682e-4554-8d6c-458e53e77b1a">
+              <id root="1e977c5f-2ee5-45dc-8cfe-017e4cfe59f3"></id>
+              <code code="230-50" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Drug-Lifestyle Interactions"></code>
+              <title>Drug-Lifestyle Interactions</title>
+              <text>ggg</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="1dd7d5e2-3a13-4d9f-ac25-0a5a3c307cd9">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="240" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Dosage And Administration"></code>
+          <title>Dosage And Administration</title>
+          <text>aaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+          <component>
+            <section ID="9499d9a7-9c92-42b3-8ea6-6dbdef400573">
+              <id root="1dd7d5e2-3a13-4d9f-ac25-0a5a3c307cd9"></id>
+              <code code="240-10" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Dosing Considerations"></code>
+              <title>Dosing Considerations</title>
+              <text>bbb</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="66ca99a5-e51f-4c00-bb27-0cdd66dad616">
+              <id root="1dd7d5e2-3a13-4d9f-ac25-0a5a3c307cd9"></id>
+              <code code="240-20" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Recommended Dose And Dosage Adjustment"></code>
+              <title>Recommended Dose And Dosage Adjustment</title>
+              <text>ccc</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="1b7aa9cc-8044-4fdd-a46e-6cff18226e84">
+              <id root="1dd7d5e2-3a13-4d9f-ac25-0a5a3c307cd9"></id>
+              <code code="240-30" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Missed Dose"></code>
+              <title>Missed Dose</title>
+              <text>ddd</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="a50ba5dd-2633-48b8-b486-8bc2dbfe373b">
+              <id root="1dd7d5e2-3a13-4d9f-ac25-0a5a3c307cd9"></id>
+              <code code="240-40" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Administration"></code>
+              <title>Administration</title>
+              <text>eee</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="3534f51b-02f4-475e-926e-477164d9dfe4">
+              <id root="1dd7d5e2-3a13-4d9f-ac25-0a5a3c307cd9"></id>
+              <code code="240-50" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Reconstitution"></code>
+              <title>Reconstitution</title>
+              <text>fff</text>
+              <effectiveTime value="20161208"></effectiveTime>
+              <component>
+                <section ID="782a6d5f-5751-470f-be53-99af810f72c3">
+                  <id root="3534f51b-02f4-475e-926e-477164d9dfe4"></id>
+                  <code code="240-50-10" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Oral Solutions"></code>
+                  <title>Oral Solutions</title>
+                  <text>ggg</text>
+                  <effectiveTime value="20161208"></effectiveTime>
+                </section>
+              </component>
+              <component>
+                <section ID="a66d908c-f102-4636-bb76-6f249599f54d">
+                  <id root="3534f51b-02f4-475e-926e-477164d9dfe4"></id>
+                  <code code="240-50-20" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Parenteral Products"></code>
+                  <title>Parenteral Products</title>
+                  <text>hhh</text>
+                  <effectiveTime value="20161208"></effectiveTime>
+                </section>
+              </component>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="35ea8892-a994-44da-b056-5cf306d95961">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="250" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Overdosage"></code>
+          <title>Overdosage</title>
+          <text>aaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="f40a87ab-23c0-40be-b739-b0ad78748fca">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="270" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Storage and Stability"></code>
+          <title>Storage and Stability</title>
+          <text>bbb</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="ae17fb71-dfb8-4d7f-ad53-48bd7217d747">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="280" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Special Handling Instructions"></code>
+          <title>Special Handling Instructions</title>
+          <text>ccc</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="d5e1bb97-f6b2-47bd-b451-0f65ff5b72d5">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="290" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Dosage Forms, Composition and Packaging"></code>
+          <title>Dosage Forms, Composition and Packaging</title>
+          <text>ddd</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="2875539d-6e4f-4b78-a038-59fb3eef5d9c">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="30" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Part II: Scientific Information"></code>
+          <title>Part II: Scientific Information</title>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="1ad63d80-dc36-45f2-95d7-0a71651ac0ca">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="320" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Detailed Pharmacology"></code>
+          <title>Detailed Pharmacology</title>
+          <text>aaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="9898eec0-beae-416e-a648-369627ae72d7">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="330" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Microbiology"></code>
+          <title>Microbiology</title>
+          <text>bbb</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="d934dad3-4889-4705-b07e-3594b5b97160">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="340" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Toxicology"></code>
+          <title>Toxicology</title>
+          <text>ccc</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="15049bd4-4f0c-468d-8d52-75a3a415a9d9">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="350" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="References"></code>
+          <title>References</title>
+          <text>ddd</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="f7afe285-e686-4da9-b366-3ffcc2d87c61">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="40" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Part III: Consumer Information"></code>
+          <title>Part III: Consumer Information</title>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="769501e3-051e-41bf-b4de-dcbe0570a250">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="480" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="General"></code>
+          <title>General</title>
+          <text>aaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="b0f433b9-d0f7-476b-a768-aef69a325dc2">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="490" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Opening Disclaimer"></code>
+          <title>Opening Disclaimer</title>
+          <text>bbb</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="18d47ebd-6452-4ee7-8a47-d6c1c28e05d2">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="360   " codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="About This Medication"></code>
+          <title>About This Medication</title>
+          <text>ccc</text>
+          <effectiveTime value="20161208"></effectiveTime>
+          <component>
+            <section ID="595ec421-d982-46d4-bd1e-6202f4cfda29">
+              <id root="18d47ebd-6452-4ee7-8a47-d6c1c28e05d2"></id>
+              <code code="360-10" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="What The Medication Is Used For"></code>
+              <title>What The Medication Is Used For</title>
+              <text>ddd</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="f64139d1-c244-483a-bdbc-c44b03e86480">
+              <id root="18d47ebd-6452-4ee7-8a47-d6c1c28e05d2"></id>
+              <code code="360-20" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="What It Does"></code>
+              <title>What It Does</title>
+              <text>eee</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="ba41aaba-8f3b-4ab8-af2d-365c95e2b2ce">
+              <id root="18d47ebd-6452-4ee7-8a47-d6c1c28e05d2"></id>
+              <code code="360-30" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="When It Should Not Be Used"></code>
+              <title>When It Should Not Be Used</title>
+              <text>fff</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="e0de27d7-d919-4d6a-b449-db12dbb9ad56">
+              <id root="18d47ebd-6452-4ee7-8a47-d6c1c28e05d2"></id>
+              <code code="360-40" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="What The Medicinal Ingredient Is"></code>
+              <title>What The Medicinal Ingredient Is</title>
+              <text>ggg</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="8afbc7bc-3323-4185-a897-93b16339c055">
+              <id root="18d47ebd-6452-4ee7-8a47-d6c1c28e05d2"></id>
+              <code code="360-50" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="What The Important Nonmedicinal Ingredients Are"></code>
+              <title>What The Important Nonmedicinal Ingredients Are</title>
+              <text>hhh</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="25a46f2c-0cf9-49e1-92a7-f33410990869">
+              <id root="18d47ebd-6452-4ee7-8a47-d6c1c28e05d2"></id>
+              <code code="360-60" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="What Dosage Forms It Comes In"></code>
+              <title>What Dosage Forms It Comes In</title>
+              <text>ggg</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="ea41bcd0-089d-4318-a2dd-ed3924a79858">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="370" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Warnings and Precautions"></code>
+          <title>Warnings and Precautions</title>
+          <text>aaaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="09aed8aa-5bf0-4b93-9882-1f7a1a94dade">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="380" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Interactions With This Medication"></code>
+          <title>Interactions With This Medication</title>
+          <text>bbb</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="155cd683-188f-4ce2-827f-04f239c8fa7e">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="400" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Side effects and what to do about them"></code>
+          <title>Side effects and what to do about them</title>
+          <text>ccc</text>
+          <effectiveTime value="20161208"></effectiveTime>
+        </section>
+      </component>
+      <component>
+        <section ID="51aece81-54c4-497c-96a1-2a1cfb3b6ff3">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca"></id>
+          <code code="390" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Proper use of this medication"></code>
+          <title>Proper use of this medication</title>
+          <text>aaa</text>
+          <effectiveTime value="20161208"></effectiveTime>
+          <component>
+            <section ID="79e1a8cb-47fc-49a6-ac99-85ef75557896">
+              <id root="51aece81-54c4-497c-96a1-2a1cfb3b6ff3"></id>
+              <code code="390-10" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Usual dose"></code>
+              <title>Usual dose</title>
+              <text>bbb</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="b974863c-ce8e-4510-bbd5-27b635e51758">
+              <id root="51aece81-54c4-497c-96a1-2a1cfb3b6ff3"></id>
+              <code code="390-20" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Overdose"></code>
+              <title>Overdose</title>
+              <text>ccc</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+          <component>
+            <section ID="4f961642-2da5-45fa-80bc-512c4d4514e7">
+              <id root="51aece81-54c4-497c-96a1-2a1cfb3b6ff3"></id>
+              <code code="390-30" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Missed Dose"></code>
+              <title>Missed Dose</title>
+              <text>ddd</text>
+              <effectiveTime value="20161208"></effectiveTime>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="8118062b-a0e3-4415-94b5-d93ed0ab9c56">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca" />
+          <code code="410" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="How to store it" />
+          <title>How to store it</title>
+          <text>hhh</text>
+          <effectiveTime value="20161208" />
+        </section>
+      </component>
+      <component>
+        <section ID="6f1be4e9-c0fd-4208-96c3-2fbb8d24643d">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca" />
+          <code code="430" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="More information" />
+          <title>More information</title>
+          <text>mmm</text>
+          <effectiveTime value="20161208" />
+        </section>
+      </component>
+      <component>
+        <section ID="d5a127cb-549f-4648-95a9-3fe2754733ad">
+          <id root="8775f9dd-31de-4710-b064-cc9db22916ca" />
+          <code code="470" codeSystem="2.16.840.1.113883.3.989.5.1.4.1.8" displayName="Part 3 Revision Date" />
+          <title>Part 3 Revision Date</title>
+          <text>2016-12-08</text>
+          <effectiveTime value="20161208" />
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</document>

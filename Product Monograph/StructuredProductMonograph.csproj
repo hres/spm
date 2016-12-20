@@ -1,0 +1,1337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63F77DF0-9847-4215-B133-B626A8D0D5E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StructuredProductMonograph</RootNamespace>
+    <AssemblyName>StructuredProductMonograph</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\Standard2004Model\Standard2004Model\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit.HtmlEditor.Sanitizer">
+      <HintPath>..\..\Standard2004Model\Standard2004Model\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.Composition.Registration" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="ControlledList.fr.xml" />
+    <Content Include="ControlledList.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="spmAssets\js\spm.js" />
+    <Content Include="spmAssets\xml\ControlledList.fr.xml" />
+    <Content Include="spmAssets\xml\hcSPLcv.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="8775f9dd-31de-4710-b064-cc9db22916ca.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\titlePage.aspx" />
+    <Content Include="CoverpageOld.aspx" />
+    <Content Include="spmAssets\css\hcans.css" />
+    <Content Include="spmAssets\css\pmp.css" />
+    <Content Include="distro\4.0.20\assets\cloud-popup-relative.png" />
+    <Content Include="distro\4.0.20\assets\favicon-mobile.png" />
+    <Content Include="distro\4.0.20\assets\favicon.ico" />
+    <Content Include="distro\4.0.20\assets\fd-slider-sprite.png" />
+    <Content Include="distro\4.0.20\assets\loading.png" />
+    <Content Include="distro\4.0.20\assets\logo.png" />
+    <Content Include="distro\4.0.20\assets\logo.svg" />
+    <Content Include="distro\4.0.20\assets\mediacontrols.html" />
+    <Content Include="distro\4.0.20\assets\multimedia.swf" />
+    <Content Include="distro\4.0.20\assets\sprites_geomap.png" />
+    <Content Include="distro\4.0.20\assets\sprites_share.png" />
+    <Content Include="distro\4.0.20\assets\zoom-minus-mini.png" />
+    <Content Include="distro\4.0.20\assets\zoom-plus-mini.png" />
+    <Content Include="distro\4.0.20\assets\zoom-world-mini.png" />
+    <Content Include="distro\4.0.20\css\ie8-theme.css" />
+    <Content Include="distro\4.0.20\css\ie8-theme.min.css" />
+    <Content Include="distro\4.0.20\css\ie8-wet-boew.css" />
+    <Content Include="distro\4.0.20\css\ie8-wet-boew.min.css" />
+    <Content Include="distro\4.0.20\css\noscript.css" />
+    <Content Include="distro\4.0.20\css\noscript.min.css" />
+    <Content Include="distro\4.0.20\css\polyfills\datalist.css" />
+    <Content Include="distro\4.0.20\css\polyfills\datalist.min.css" />
+    <Content Include="distro\4.0.20\css\polyfills\datepicker.css" />
+    <Content Include="distro\4.0.20\css\polyfills\datepicker.min.css" />
+    <Content Include="distro\4.0.20\css\polyfills\details.css" />
+    <Content Include="distro\4.0.20\css\polyfills\details.min.css" />
+    <Content Include="distro\4.0.20\css\polyfills\meter.css" />
+    <Content Include="distro\4.0.20\css\polyfills\meter.min.css" />
+    <Content Include="distro\4.0.20\css\polyfills\progress.css" />
+    <Content Include="distro\4.0.20\css\polyfills\progress.min.css" />
+    <Content Include="distro\4.0.20\css\polyfills\slider.css" />
+    <Content Include="distro\4.0.20\css\polyfills\slider.min.css" />
+    <Content Include="distro\4.0.20\css\theme.css" />
+    <Content Include="distro\4.0.20\css\theme.min.css" />
+    <Content Include="distro\4.0.20\css\wet-boew.css" />
+    <Content Include="distro\4.0.20\css\wet-boew.min.css" />
+    <Content Include="distro\4.0.20\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="distro\4.0.20\GCWeb\assets\favicon-mobile.png" />
+    <Content Include="distro\4.0.20\GCWeb\assets\favicon.ico" />
+    <Content Include="distro\4.0.20\GCWeb\assets\feedback.png" />
+    <Content Include="distro\4.0.20\GCWeb\assets\mobile.png" />
+    <Content Include="distro\4.0.20\GCWeb\assets\sig-blk-en.png" />
+    <Content Include="distro\4.0.20\GCWeb\assets\sig-blk-en.svg" />
+    <Content Include="distro\4.0.20\GCWeb\assets\sig-blk-fr.png" />
+    <Content Include="distro\4.0.20\GCWeb\assets\sig-blk-fr.svg" />
+    <Content Include="distro\4.0.20\GCWeb\assets\social.png" />
+    <Content Include="distro\4.0.20\GCWeb\assets\wmms-alt.png" />
+    <Content Include="distro\4.0.20\GCWeb\assets\wmms-blk.png" />
+    <Content Include="distro\4.0.20\GCWeb\assets\wmms-blk.svg" />
+    <Content Include="distro\4.0.20\GCWeb\assets\wmms-spl.png" />
+    <Content Include="distro\4.0.20\GCWeb\css\theme.min.css" />
+    <Content Include="distro\4.0.20\js\deps\additional-methods.js" />
+    <Content Include="distro\4.0.20\js\deps\additional-methods.min.js" />
+    <Content Include="distro\4.0.20\js\deps\geomap-lib.js" />
+    <Content Include="distro\4.0.20\js\deps\geomap-lib.min.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.dataTables.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.dataTables.min.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.flot.canvas.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.flot.canvas.min.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.flot.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.flot.min.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.flot.orderBars.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.flot.orderBars.min.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.flot.pie.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.flot.pie.min.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.magnific-popup.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.magnific-popup.min.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.pjax.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.pjax.min.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.validate.js" />
+    <Content Include="distro\4.0.20\js\deps\jquery.validate.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-apollo.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-apollo.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-basic.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-basic.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-clj.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-clj.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-css.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-css.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-dart.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-dart.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-erlang.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-erlang.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-go.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-go.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-hs.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-hs.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-lisp.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-lisp.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-llvm.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-llvm.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-lua.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-lua.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-matlab.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-matlab.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-ml.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-ml.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-mumps.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-mumps.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-n.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-n.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-pascal.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-pascal.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-proto.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-proto.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-r.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-r.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-rd.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-rd.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-scala.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-scala.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-sql.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-sql.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-tcl.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-tcl.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-tex.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-tex.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-vb.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-vb.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-vhdl.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-vhdl.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-wiki.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-wiki.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-xq.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-xq.min.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-yaml.js" />
+    <Content Include="distro\4.0.20\js\deps\lang-yaml.min.js" />
+    <Content Include="distro\4.0.20\js\deps\OpenLayers.js" />
+    <Content Include="distro\4.0.20\js\deps\OpenLayers.min.js" />
+    <Content Include="distro\4.0.20\js\deps\prettify.js" />
+    <Content Include="distro\4.0.20\js\deps\prettify.min.js" />
+    <Content Include="distro\4.0.20\js\deps\proj4.js" />
+    <Content Include="distro\4.0.20\js\deps\proj4.min.js" />
+    <Content Include="distro\4.0.20\js\deps\run_prettify.js" />
+    <Content Include="distro\4.0.20\js\deps\run_prettify.min.js" />
+    <Content Include="distro\4.0.20\js\deps\tableparser.js" />
+    <Content Include="distro\4.0.20\js\deps\tableparser.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\af.js" />
+    <Content Include="distro\4.0.20\js\i18n\af.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\ar.js" />
+    <Content Include="distro\4.0.20\js\i18n\ar.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\bg.js" />
+    <Content Include="distro\4.0.20\js\i18n\bg.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\cs.js" />
+    <Content Include="distro\4.0.20\js\i18n\cs.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\de.js" />
+    <Content Include="distro\4.0.20\js\i18n\de.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\el.js" />
+    <Content Include="distro\4.0.20\js\i18n\el.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\en.js" />
+    <Content Include="distro\4.0.20\js\i18n\en.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\es.js" />
+    <Content Include="distro\4.0.20\js\i18n\es.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\et.js" />
+    <Content Include="distro\4.0.20\js\i18n\et.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\fr.js" />
+    <Content Include="distro\4.0.20\js\i18n\fr.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\hi.js" />
+    <Content Include="distro\4.0.20\js\i18n\hi.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\hu.js" />
+    <Content Include="distro\4.0.20\js\i18n\hu.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\hy.js" />
+    <Content Include="distro\4.0.20\js\i18n\hy.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\id.js" />
+    <Content Include="distro\4.0.20\js\i18n\id.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\is.js" />
+    <Content Include="distro\4.0.20\js\i18n\is.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\it.js" />
+    <Content Include="distro\4.0.20\js\i18n\it.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\ja.js" />
+    <Content Include="distro\4.0.20\js\i18n\ja.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\ko.js" />
+    <Content Include="distro\4.0.20\js\i18n\ko.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\lt.js" />
+    <Content Include="distro\4.0.20\js\i18n\lt.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\lv.js" />
+    <Content Include="distro\4.0.20\js\i18n\lv.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\nl.js" />
+    <Content Include="distro\4.0.20\js\i18n\nl.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\pl.js" />
+    <Content Include="distro\4.0.20\js\i18n\pl.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\pt-BR.js" />
+    <Content Include="distro\4.0.20\js\i18n\pt-BR.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\pt.js" />
+    <Content Include="distro\4.0.20\js\i18n\pt.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\ru.js" />
+    <Content Include="distro\4.0.20\js\i18n\ru.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\sk.js" />
+    <Content Include="distro\4.0.20\js\i18n\sk.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\sq.js" />
+    <Content Include="distro\4.0.20\js\i18n\sq.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\th.js" />
+    <Content Include="distro\4.0.20\js\i18n\th.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\tr.js" />
+    <Content Include="distro\4.0.20\js\i18n\tr.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\uk.js" />
+    <Content Include="distro\4.0.20\js\i18n\uk.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\vi.js" />
+    <Content Include="distro\4.0.20\js\i18n\vi.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\zh-Hans.js" />
+    <Content Include="distro\4.0.20\js\i18n\zh-Hans.min.js" />
+    <Content Include="distro\4.0.20\js\i18n\zh.js" />
+    <Content Include="distro\4.0.20\js\i18n\zh.min.js" />
+    <Content Include="distro\4.0.20\js\ie8-wet-boew.js" />
+    <Content Include="distro\4.0.20\js\ie8-wet-boew.min.js" />
+    <Content Include="distro\4.0.20\js\ie8-wet-boew2.js" />
+    <Content Include="distro\4.0.20\js\ie8-wet-boew2.min.js" />
+    <Content Include="distro\4.0.20\js\jquery\1.11.1\jquery.js" />
+    <Content Include="distro\4.0.20\js\jquery\1.11.1\jquery.min.js" />
+    <Content Include="distro\4.0.20\js\jquery\2.1.4\jquery.js" />
+    <Content Include="distro\4.0.20\js\jquery\2.1.4\jquery.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\datalist.js" />
+    <Content Include="distro\4.0.20\js\polyfills\datalist.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\datalist_dynamic.js" />
+    <Content Include="distro\4.0.20\js\polyfills\datalist_dynamic.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\datepicker.js" />
+    <Content Include="distro\4.0.20\js\polyfills\datepicker.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\details.js" />
+    <Content Include="distro\4.0.20\js\polyfills\details.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\jawsariafixes.js" />
+    <Content Include="distro\4.0.20\js\polyfills\jawsariafixes.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\meter.js" />
+    <Content Include="distro\4.0.20\js\polyfills\meter.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\mobile.js" />
+    <Content Include="distro\4.0.20\js\polyfills\mobile.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\progress.js" />
+    <Content Include="distro\4.0.20\js\polyfills\progress.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\slider.js" />
+    <Content Include="distro\4.0.20\js\polyfills\slider.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\slider_wrapper.js" />
+    <Content Include="distro\4.0.20\js\polyfills\slider_wrapper.min.js" />
+    <Content Include="distro\4.0.20\js\polyfills\svg.js" />
+    <Content Include="distro\4.0.20\js\polyfills\svg.min.js" />
+    <Content Include="distro\4.0.20\js\wet-boew.js" />
+    <Content Include="distro\4.0.20\js\wet-boew.min.js" />
+    <Content Include="distro\4.0.20\theme-wet-boew\assets\favicon-mobile.png" />
+    <Content Include="distro\4.0.20\theme-wet-boew\assets\favicon.ico" />
+    <Content Include="distro\4.0.20\theme-wet-boew\assets\logo.png" />
+    <Content Include="distro\4.0.20\theme-wet-boew\assets\logo.svg" />
+    <Content Include="distro\4.0.20\theme-wet-boew\css\ie8-theme.css" />
+    <Content Include="distro\4.0.20\theme-wet-boew\css\ie8-theme.min.css" />
+    <Content Include="distro\4.0.20\theme-wet-boew\css\ie8-wet-boew.css" />
+    <Content Include="distro\4.0.20\theme-wet-boew\css\ie8-wet-boew.min.css" />
+    <Content Include="distro\4.0.20\theme-wet-boew\css\theme.css" />
+    <Content Include="distro\4.0.20\theme-wet-boew\css\theme.min.css" />
+    <Content Include="distro\4.0.20\theme-wet-boew\css\wet-boew.css" />
+    <Content Include="distro\4.0.20\theme-wet-boew\css\wet-boew.min.css" />
+    <Content Include="distro\4.0.20\theme-wet-boew\Licence-fr.txt" />
+    <Content Include="distro\4.0.20\theme-wet-boew\License-en.txt" />
+    <Content Include="distro\4.0.20\wet-boew\assets\cloud-popup-relative.png" />
+    <Content Include="distro\4.0.20\wet-boew\assets\fd-slider-sprite.png" />
+    <Content Include="distro\4.0.20\wet-boew\assets\loading.png" />
+    <Content Include="distro\4.0.20\wet-boew\assets\mediacontrols.html" />
+    <Content Include="distro\4.0.20\wet-boew\assets\multimedia.swf" />
+    <Content Include="distro\4.0.20\wet-boew\assets\sprites_geomap.png" />
+    <Content Include="distro\4.0.20\wet-boew\assets\sprites_share.png" />
+    <Content Include="distro\4.0.20\wet-boew\assets\zoom-minus-mini.png" />
+    <Content Include="distro\4.0.20\wet-boew\assets\zoom-plus-mini.png" />
+    <Content Include="distro\4.0.20\wet-boew\assets\zoom-world-mini.png" />
+    <Content Include="distro\4.0.20\wet-boew\css\noscript.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\noscript.min.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\datalist.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\datalist.min.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\datepicker.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\datepicker.min.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\details.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\details.min.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\meter.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\meter.min.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\progress.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\progress.min.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\slider.css" />
+    <Content Include="distro\4.0.20\wet-boew\css\polyfills\slider.min.css" />
+    <Content Include="distro\4.0.20\wet-boew\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\additional-methods.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\additional-methods.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\geomap-lib.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\geomap-lib.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.dataTables.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.dataTables.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.flot.canvas.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.flot.canvas.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.flot.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.flot.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.flot.orderBars.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.flot.orderBars.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.flot.pie.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.flot.pie.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.magnific-popup.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.magnific-popup.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.pjax.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.pjax.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.validate.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\jquery.validate.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-apollo.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-apollo.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-basic.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-basic.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-clj.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-clj.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-css.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-css.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-dart.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-dart.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-erlang.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-erlang.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-go.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-go.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-hs.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-hs.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-lisp.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-lisp.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-llvm.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-llvm.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-lua.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-lua.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-matlab.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-matlab.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-ml.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-ml.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-mumps.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-mumps.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-n.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-n.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-pascal.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-pascal.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-proto.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-proto.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-r.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-r.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-rd.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-rd.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-scala.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-scala.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-sql.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-sql.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-tcl.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-tcl.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-tex.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-tex.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-vb.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-vb.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-vhdl.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-vhdl.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-wiki.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-wiki.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-xq.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-xq.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-yaml.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\lang-yaml.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\OpenLayers.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\OpenLayers.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\prettify.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\prettify.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\proj4.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\proj4.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\run_prettify.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\run_prettify.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\tableparser.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\deps\tableparser.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\af.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\af.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\ar.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\ar.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\bg.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\bg.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\cs.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\cs.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\de.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\de.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\el.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\el.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\en.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\en.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\es.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\es.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\et.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\et.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\fr.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\fr.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\hi.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\hi.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\hu.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\hu.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\hy.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\hy.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\id.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\id.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\is.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\is.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\it.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\it.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\ja.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\ja.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\ko.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\ko.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\lt.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\lt.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\lv.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\lv.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\nl.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\nl.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\pl.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\pl.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\pt-BR.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\pt-BR.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\pt.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\pt.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\ru.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\ru.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\sk.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\sk.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\sq.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\sq.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\th.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\th.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\tr.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\tr.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\uk.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\uk.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\vi.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\vi.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\zh-Hans.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\zh-Hans.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\zh.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\i18n\zh.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\ie8-wet-boew.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\ie8-wet-boew.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\ie8-wet-boew2.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\ie8-wet-boew2.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\jquery\1.11.1\jquery.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\jquery\1.11.1\jquery.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\jquery\2.1.4\jquery.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\jquery\2.1.4\jquery.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\datalist.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\datalist.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\datalist_dynamic.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\datalist_dynamic.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\datepicker.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\datepicker.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\details.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\details.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\jawsariafixes.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\jawsariafixes.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\meter.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\meter.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\mobile.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\mobile.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\progress.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\progress.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\slider.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\slider.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\slider_wrapper.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\slider_wrapper.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\svg.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\svg.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\wet-boew.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\wet-boew.min.4.0.20.js" />
+    <Content Include="distro\4.0.20\wet-boew\js\wet-boew.min.js" />
+    <Content Include="distro\4.0.20\wet-boew\Licence-fr.txt" />
+    <Content Include="distro\4.0.20\wet-boew\License-en.txt" />
+    <Content Include="spmAssets\images\btnAdd.png" />
+    <Content Include="spmAssets\images\btnRemove.png" />
+    <Content Include="spmAssets\images\c.jpg" />
+    <Content Include="spmAssets\images\header-leaf.jpg" />
+    <Content Include="spmAssets\images\landingnotes.png" />
+    <Content Include="spmAssets\images\minus_icon.png" />
+    <Content Include="spmAssets\images\n.png" />
+    <Content Include="spmAssets\images\plus_icon.png" />
+    <Content Include="spmAssets\images\pr.png" />
+    <Content Include="spmAssets\images\qmark.jpg" />
+    <Content Include="spmAssets\images\qmark.png" />
+    <Content Include="spmAssets\images\tsc.jpg" />
+    <Content Include="spmAssets\images\x.png" />
+    <Content Include="spmAssets\js\form.js" />
+    <Content Include="spmAssets\js\partThree.js" />
+    <Content Include="spmAssets\js\partTwo.js" />
+    <Content Include="spmAssets\js\pmpNew.js" />
+    <Content Include="spmAssets\js\pmp.js" />
+    <Content Include="spmAssets\js\partOne.js" />
+    <Content Include="spmAssets\js\coverPage.js" />
+    <Content Include="Views\index.aspx" />
+    <Content Include="ProdMono.Master" />
+    <Content Include="spmAssets\scheduling symbol\btnAdd.png" />
+    <Content Include="spmAssets\scheduling symbol\c.jpg" />
+    <Content Include="spmAssets\scheduling symbol\c.png" />
+    <Content Include="spmAssets\scheduling symbol\n.png" />
+    <Content Include="spmAssets\scheduling symbol\pr.png" />
+    <Content Include="spmAssets\scheduling symbol\proprietary.png" />
+    <Content Include="spmAssets\scheduling symbol\qmark.jpg" />
+    <Content Include="spmAssets\scheduling symbol\qmark.png" />
+    <Content Include="spmAssets\scheduling symbol\tsc.jpg" />
+    <Content Include="spmAssets\scheduling symbol\xbox.gif" />
+    <Content Include="packages.config" />
+    <Content Include="PMForm.aspx" />
+    <Content Include="tinymce\changelog.txt" />
+    <Content Include="tinymce\Gruntfile.js" />
+    <Content Include="tinymce\js\tinymce\classes\AddOnManager.js" />
+    <Content Include="tinymce\js\tinymce\classes\Compat.js" />
+    <Content Include="tinymce\js\tinymce\classes\data\Binding.js" />
+    <Content Include="tinymce\js\tinymce\classes\data\ObservableArray.js" />
+    <Content Include="tinymce\js\tinymce\classes\data\ObservableObject.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\BookmarkManager.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\ControlSelection.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\DomQuery.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\DOMUtils.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\ElementUtils.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\EventUtils.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\Range.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\RangeUtils.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\ScriptLoader.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\Selection.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\Serializer.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\Sizzle.jQuery.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\Sizzle.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\StyleSheetLoader.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\TreeWalker.js" />
+    <Content Include="tinymce\js\tinymce\classes\dom\TridentSelection.js" />
+    <Content Include="tinymce\js\tinymce\classes\Editor.js" />
+    <Content Include="tinymce\js\tinymce\classes\EditorCommands.js" />
+    <Content Include="tinymce\js\tinymce\classes\EditorManager.js" />
+    <Content Include="tinymce\js\tinymce\classes\EditorObservable.js" />
+    <Content Include="tinymce\js\tinymce\classes\EditorUpload.js" />
+    <Content Include="tinymce\js\tinymce\classes\EnterKey.js" />
+    <Content Include="tinymce\js\tinymce\classes\Env.js" />
+    <Content Include="tinymce\js\tinymce\classes\file\BlobCache.js" />
+    <Content Include="tinymce\js\tinymce\classes\file\Conversions.js" />
+    <Content Include="tinymce\js\tinymce\classes\file\ImageScanner.js" />
+    <Content Include="tinymce\js\tinymce\classes\file\Uploader.js" />
+    <Content Include="tinymce\js\tinymce\classes\fmt\Preview.js" />
+    <Content Include="tinymce\js\tinymce\classes\FocusManager.js" />
+    <Content Include="tinymce\js\tinymce\classes\ForceBlocks.js" />
+    <Content Include="tinymce\js\tinymce\classes\Formatter.js" />
+    <Content Include="tinymce\js\tinymce\classes\html\DomParser.js" />
+    <Content Include="tinymce\js\tinymce\classes\html\Entities.js" />
+    <Content Include="tinymce\js\tinymce\classes\html\Node.js" />
+    <Content Include="tinymce\js\tinymce\classes\html\SaxParser.js" />
+    <Content Include="tinymce\js\tinymce\classes\html\Schema.js" />
+    <Content Include="tinymce\js\tinymce\classes\html\Serializer.js" />
+    <Content Include="tinymce\js\tinymce\classes\html\Styles.js" />
+    <Content Include="tinymce\js\tinymce\classes\html\Writer.js" />
+    <Content Include="tinymce\js\tinymce\classes\jquery.tinymce.js" />
+    <Content Include="tinymce\js\tinymce\classes\LegacyInput.js" />
+    <Content Include="tinymce\js\tinymce\classes\NodeChange.js" />
+    <Content Include="tinymce\js\tinymce\classes\Shortcuts.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\AbsoluteLayout.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\BoxUtils.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Button.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ButtonGroup.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Checkbox.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ClassList.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Collection.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ColorBox.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ColorButton.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ColorPicker.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ComboBox.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Container.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Control.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\DomUtils.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\DragHelper.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ElementPath.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Factory.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\FieldSet.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\FilePicker.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\FitLayout.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\FlexLayout.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\FloatPanel.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\FlowLayout.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Form.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\FormatControls.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\FormItem.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\GridLayout.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Iframe.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\KeyboardNavigation.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Label.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Layout.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ListBox.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Menu.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\MenuBar.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\MenuButton.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\MenuItem.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\MessageBox.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Movable.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Panel.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\PanelButton.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Path.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Radio.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Rect.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ReflowQueue.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Resizable.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\ResizeHandle.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Scrollable.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Selector.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Slider.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Spacer.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\SplitButton.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\StackLayout.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\TabPanel.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\TextBox.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Throbber.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Toolbar.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Tooltip.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Widget.js" />
+    <Content Include="tinymce\js\tinymce\classes\ui\Window.js" />
+    <Content Include="tinymce\js\tinymce\classes\UndoManager.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\Class.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\Color.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\EventDispatcher.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\I18n.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\JSON.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\JSONP.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\JSONRequest.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\LocalStorage.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\Observable.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\Promise.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\Quirks.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\Tools.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\URI.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\VK.js" />
+    <Content Include="tinymce\js\tinymce\classes\util\XHR.js" />
+    <Content Include="tinymce\js\tinymce\classes\WindowManager.js" />
+    <Content Include="tinymce\js\tinymce\jquery.tinymce.min.js" />
+    <Content Include="tinymce\js\tinymce\license.txt" />
+    <Content Include="tinymce\js\tinymce\plugins\advlist\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\anchor\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\autolink\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\autoresize\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\autosave\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\bbcode\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\charmap\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\code\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\colorpicker\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\css\dialog.css" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\img\buttons.png" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\img\icons.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\img\items.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\img\menu_arrow.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\img\menu_check.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\img\progress.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\img\tabs.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\tiny_mce_popup.js" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\utils\editable_selects.js" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\utils\form_utils.js" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\utils\mctabs.js" />
+    <Content Include="tinymce\js\tinymce\plugins\compat3x\utils\validate.js" />
+    <Content Include="tinymce\js\tinymce\plugins\contextmenu\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\directionality\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\example\dialog.html" />
+    <Content Include="tinymce\js\tinymce\plugins\example\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\example\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\example_dependency\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\example_dependency\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\fullpage\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\fullscreen\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\hr\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\Canvas.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\ColorMatrix.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\Conversions.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\CropRect.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\Dialog.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\Filters.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\ImagePanel.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\ImageSize.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\ImageTools.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\Mime.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\Plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\classes\UndoStack.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\plugin.dev.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\image\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\importcss\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\insertdatetime\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\layer\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\layer\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\legacyoutput\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\link\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\lists\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="tinymce\js\tinymce\plugins\media\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\nonbreaking\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\noneditable\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\pagebreak\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\paste\classes\Clipboard.js" />
+    <Content Include="tinymce\js\tinymce\plugins\paste\classes\Plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\paste\classes\Quirks.js" />
+    <Content Include="tinymce\js\tinymce\plugins\paste\classes\Utils.js" />
+    <Content Include="tinymce\js\tinymce\plugins\paste\classes\WordFilter.js" />
+    <Content Include="tinymce\js\tinymce\plugins\paste\plugin.dev.js" />
+    <Content Include="tinymce\js\tinymce\plugins\paste\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\preview\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\print\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\save\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\searchreplace\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\spellchecker\classes\DomTextMatcher.js" />
+    <Content Include="tinymce\js\tinymce\plugins\spellchecker\classes\Plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\spellchecker\plugin.dev.js" />
+    <Content Include="tinymce\js\tinymce\plugins\spellchecker\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\tabfocus\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\table\classes\CellSelection.js" />
+    <Content Include="tinymce\js\tinymce\plugins\table\classes\Dialogs.js" />
+    <Content Include="tinymce\js\tinymce\plugins\table\classes\Plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\table\classes\Quirks.js" />
+    <Content Include="tinymce\js\tinymce\plugins\table\classes\TableGrid.js" />
+    <Content Include="tinymce\js\tinymce\plugins\table\classes\Utils.js" />
+    <Content Include="tinymce\js\tinymce\plugins\table\plugin.dev.js" />
+    <Content Include="tinymce\js\tinymce\plugins\table\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\template\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\textcolor\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\textpattern\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\address.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\article.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\aside.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\blockquote.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\div.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\dl.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\figure.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\h1.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\h2.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\h3.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\h4.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\h5.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\h6.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\hgroup.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\ol.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\p.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\pre.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\section.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\img\ul.gif" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\visualchars\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\plugins\wordcount\plugin.js" />
+    <Content Include="tinymce\js\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="tinymce\js\tinymce\themes\modern\theme.js" />
+    <Content Include="tinymce\js\tinymce\themes\modern\theme.min.js" />
+    <Content Include="tinymce\js\tinymce\tinymce.dev.js" />
+    <Content Include="tinymce\js\tinymce\tinymce.jquery.dev.js" />
+    <Content Include="tinymce\js\tinymce\tinymce.jquery.js" />
+    <Content Include="tinymce\js\tinymce\tinymce.jquery.min.js" />
+    <Content Include="tinymce\js\tinymce\tinymce.js" />
+    <Content Include="tinymce\js\tinymce\tinymce.min.js" />
+    <Content Include="tinymce\LICENSE.TXT" />
+    <Content Include="tinymce\tests\coverage\index.html" />
+    <Content Include="tinymce\tests\coverage\js\backbone-min.js" />
+    <Content Include="tinymce\tests\coverage\js\JSCovReporter.js" />
+    <Content Include="tinymce\tests\coverage\js\reporter.css" />
+    <Content Include="tinymce\tests\coverage\js\reporter.js" />
+    <Content Include="tinymce\tests\coverage\js\underscore-min.js" />
+    <Content Include="tinymce\tests\index.html" />
+    <Content Include="tinymce\tests\js\init.js" />
+    <Content Include="tinymce\tests\js\qunit\qunit.css" />
+    <Content Include="tinymce\tests\js\qunit\qunit.js" />
+    <Content Include="tinymce\tests\js\runner.js" />
+    <Content Include="tinymce\tests\js\tinymce_loader.js" />
+    <Content Include="tinymce\tests\js\utils.js" />
+    <Content Include="tinymce\tests\manual\accessibility.html" />
+    <Content Include="tinymce\tests\manual\classic.html" />
+    <Content Include="tinymce\tests\manual\css\custom_theme_content.css" />
+    <Content Include="tinymce\tests\manual\css\development.css" />
+    <Content Include="tinymce\tests\manual\css\gecko_caret.css" />
+    <Content Include="tinymce\tests\manual\css\noneditable_manual.css" />
+    <Content Include="tinymce\tests\manual\custom_theme.html" />
+    <Content Include="tinymce\tests\manual\development.html" />
+    <Content Include="tinymce\tests\manual\dirty.html" />
+    <Content Include="tinymce\tests\manual\focus.html" />
+    <Content Include="tinymce\tests\manual\gecko_caret.html" />
+    <Content Include="tinymce\tests\manual\imagetools.html" />
+    <Content Include="tinymce\tests\manual\img\dogleft.jpg" />
+    <Content Include="tinymce\tests\manual\index.html" />
+    <Content Include="tinymce\tests\manual\inline-toolbars.html" />
+    <Content Include="tinymce\tests\manual\inline.html" />
+    <Content Include="tinymce\tests\manual\jquery.html" />
+    <Content Include="tinymce\tests\manual\media.html" />
+    <Content Include="tinymce\tests\manual\noneditable.html" />
+    <Content Include="tinymce\tests\manual\paste.html" />
+    <Content Include="tinymce\tests\manual\performance.html" />
+    <Content Include="tinymce\tests\manual\removeformat.html" />
+    <Content Include="tinymce\tests\manual\resize.html" />
+    <Content Include="tinymce\tests\manual\skin.html" />
+    <Content Include="tinymce\tests\manual\tests.js" />
+    <Content Include="tinymce\tests\manual\visualblocks.html" />
+    <Content Include="tinymce\tests\plugins\autolink.js" />
+    <Content Include="tinymce\tests\plugins\autosave.js" />
+    <Content Include="tinymce\tests\plugins\fullpage.js" />
+    <Content Include="tinymce\tests\plugins\image.js" />
+    <Content Include="tinymce\tests\plugins\importcss.js" />
+    <Content Include="tinymce\tests\plugins\jquery_initialization.js" />
+    <Content Include="tinymce\tests\plugins\jquery_plugin.js" />
+    <Content Include="tinymce\tests\plugins\legacyoutput.js" />
+    <Content Include="tinymce\tests\plugins\link.js" />
+    <Content Include="tinymce\tests\plugins\lists.js" />
+    <Content Include="tinymce\tests\plugins\media.js" />
+    <Content Include="tinymce\tests\plugins\noneditable.js" />
+    <Content Include="tinymce\tests\plugins\paste.js" />
+    <Content Include="tinymce\tests\plugins\searchreplace.js" />
+    <Content Include="tinymce\tests\plugins\spellchecker.js" />
+    <Content Include="tinymce\tests\plugins\table.js" />
+    <Content Include="tinymce\tests\plugins\textpattern.js" />
+    <Content Include="tinymce\tests\plugins\wordcount.js" />
+    <Content Include="tinymce\tests\tinymce\AddOnManager.js" />
+    <Content Include="tinymce\tests\tinymce\dom\DomQuery.js" />
+    <Content Include="tinymce\tests\tinymce\dom\DOMUtils.js" />
+    <Content Include="tinymce\tests\tinymce\dom\EventUtils.js" />
+    <Content Include="tinymce\tests\tinymce\dom\Range.js" />
+    <Content Include="tinymce\tests\tinymce\dom\Selection.js" />
+    <Content Include="tinymce\tests\tinymce\dom\Serializer.js" />
+    <Content Include="tinymce\tests\tinymce\dom\test.css" />
+    <Content Include="tinymce\tests\tinymce\dom\TridentSelection.js" />
+    <Content Include="tinymce\tests\tinymce\Editor.js" />
+    <Content Include="tinymce\tests\tinymce\EditorCommands.js" />
+    <Content Include="tinymce\tests\tinymce\EditorManager.js" />
+    <Content Include="tinymce\tests\tinymce\EditorUpload.js" />
+    <Content Include="tinymce\tests\tinymce\EnterKey.js" />
+    <Content Include="tinymce\tests\tinymce\file\Conversions.js" />
+    <Content Include="tinymce\tests\tinymce\ForceBlocks.js" />
+    <Content Include="tinymce\tests\tinymce\Formatter_apply.js" />
+    <Content Include="tinymce\tests\tinymce\Formatter_check.js" />
+    <Content Include="tinymce\tests\tinymce\Formatter_remove.js" />
+    <Content Include="tinymce\tests\tinymce\html\DomParser.js" />
+    <Content Include="tinymce\tests\tinymce\html\Entities.js" />
+    <Content Include="tinymce\tests\tinymce\html\Node.js" />
+    <Content Include="tinymce\tests\tinymce\html\SaxParser.js" />
+    <Content Include="tinymce\tests\tinymce\html\Schema.js" />
+    <Content Include="tinymce\tests\tinymce\html\Serializer.js" />
+    <Content Include="tinymce\tests\tinymce\html\Styles.js" />
+    <Content Include="tinymce\tests\tinymce\html\Writer.js" />
+    <Content Include="tinymce\tests\tinymce\Shortcuts.js" />
+    <Content Include="tinymce\tests\tinymce\ui\AbsoluteLayout.js" />
+    <Content Include="tinymce\tests\tinymce\ui\Button.js" />
+    <Content Include="tinymce\tests\tinymce\ui\Collection.js" />
+    <Content Include="tinymce\tests\tinymce\ui\ColorButton.js" />
+    <Content Include="tinymce\tests\tinymce\ui\Control.js" />
+    <Content Include="tinymce\tests\tinymce\ui\css\ui-overrides.css" />
+    <Content Include="tinymce\tests\tinymce\ui\FitLayout.js" />
+    <Content Include="tinymce\tests\tinymce\ui\FlexLayout.js" />
+    <Content Include="tinymce\tests\tinymce\ui\GridLayout.js" />
+    <Content Include="tinymce\tests\tinymce\ui\img\raster.gif" />
+    <Content Include="tinymce\tests\tinymce\ui\MenuButton.js" />
+    <Content Include="tinymce\tests\tinymce\ui\Panel.js" />
+    <Content Include="tinymce\tests\tinymce\ui\Selector.js" />
+    <Content Include="tinymce\tests\tinymce\ui\SplitButton.js" />
+    <Content Include="tinymce\tests\tinymce\ui\TabPanel.js" />
+    <Content Include="tinymce\tests\tinymce\ui\TextBox.js" />
+    <Content Include="tinymce\tests\tinymce\ui\Window.js" />
+    <Content Include="tinymce\tests\tinymce\UndoManager.js" />
+    <Content Include="tinymce\tests\tinymce\util\Color.js" />
+    <Content Include="tinymce\tests\tinymce\util\EventDispatcher.js" />
+    <Content Include="tinymce\tests\tinymce\util\I18n.js" />
+    <Content Include="tinymce\tests\tinymce\util\JSON.js" />
+    <Content Include="tinymce\tests\tinymce\util\JSONRequest.js" />
+    <Content Include="tinymce\tests\tinymce\util\json_rpc_error.js" />
+    <Content Include="tinymce\tests\tinymce\util\json_rpc_ok.js" />
+    <Content Include="tinymce\tests\tinymce\util\LocalStorage.js" />
+    <Content Include="tinymce\tests\tinymce\util\Observable.js" />
+    <Content Include="tinymce\tests\tinymce\util\Quirks_webkit.js" />
+    <Content Include="tinymce\tests\tinymce\util\test.xml" />
+    <Content Include="tinymce\tests\tinymce\util\URI.js" />
+    <Content Include="tinymce\tests\tinymce\util\XHR.js" />
+    <Content Include="tinymce\tools\docs\tinymce.CommandEvent.js" />
+    <Content Include="tinymce\tools\docs\tinymce.ContentEvent.js" />
+    <Content Include="tinymce\tools\docs\tinymce.Editor.js" />
+    <Content Include="tinymce\tools\docs\tinymce.Event.js" />
+    <Content Include="tinymce\tools\docs\tinymce.FocusEvent.js" />
+    <Content Include="tinymce\tools\docs\tinymce.ProgressStateEvent.js" />
+    <Content Include="tinymce\tools\docs\tinymce.ResizeEvent.js" />
+    <Content Include="tinymce\tools\tasks\amdlc.js" />
+    <Content Include="tinymce\tools\tasks\bundle.js" />
+    <Content Include="tinymce\tools\tasks\moxiezip.js" />
+    <Content Include="tinymce\tools\tasks\skin.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="tinymce\.eslintrc" />
+    <Content Include="tinymce\.jscsrc" />
+    <Content Include="tinymce\.jshintrc" />
+    <Content Include="tinymce\js\tinymce\langs\readme.md" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\AbsoluteLayout.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Animations.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Button.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\ButtonGroup.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Checkbox.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\ColorBox.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\ColorButton.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\ColorPicker.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\ComboBox.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Container.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Content.Inline.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Content.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Content.Objects.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\CropRect.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\FieldSet.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\FitLayout.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\FloatPanel.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\FlowLayout.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\readme.md" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce-small.json" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce.json" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Icons.Ie7.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Icons.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Iframe.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\ImagePanel.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Label.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\ListBox.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Menu.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\MenuBar.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\MenuButton.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\MenuItem.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Mixins.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Panel.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Path.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Radio.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Reset.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\ResizeHandle.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Scrollable.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\skin.dev.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\skin.ie7.dev.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\skin.ie7.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\skin.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\skin.modern.dev.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Slider.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Spacer.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\SplitButton.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\StackLayout.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\TabPanel.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\TextBox.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Throbber.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\TinyMCE.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\ToolTip.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Variables.less" />
+    <Content Include="tinymce\js\tinymce\skins\lightgray\Window.less" />
+    <Content Include="tinymce\package.json" />
+    <Content Include="tinymce\readme.md" />
+    <Content Include="tinymce\tests\.jshintrc" />
+    <Content Include="tinymce\tests\js\qunit\QUnit.LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Resource.fr-CA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource11.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Processes.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controller\spmController.cs" />
+    <Compile Include="Models\CodeMethod.cs" />
+    <Compile Include="Models\SectionRepository.cs" />
+    <Compile Include="Models\Constants.cs" />
+    <Compile Include="Models\DataEntity.cs" />
+    <Compile Include="Models\ISectionRepository.cs" />
+    <Compile Include="Models\IRepository.cs" />
+    <Compile Include="Models\IComponentRepository.cs" />
+    <Compile Include="Models\ComponentRepository.cs" />
+    <Compile Include="Views\titlePage.aspx.cs">
+      <DependentUpon>titlePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\titlePage.aspx.designer.cs">
+      <DependentUpon>titlePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoverpageOld.aspx.cs">
+      <DependentUpon>CoverpageOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoverpageOld.aspx.designer.cs">
+      <DependentUpon>CoverpageOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ExceptionHelper.cs" />
+    <Compile Include="Helpers\SessionHelper.cs" />
+    <Compile Include="Helpers\Common.cs" />
+    <Compile Include="Helpers\UtilityHelper.cs" />
+    <Compile Include="Views\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PMForm.aspx.cs">
+      <DependentUpon>PMForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PMForm.aspx.designer.cs">
+      <DependentUpon>PMForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProdMono.Master.cs">
+      <DependentUpon>ProdMono.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProdMono.Master.designer.cs">
+      <DependentUpon>ProdMono.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ProdMonoFr.Master.cs">
+      <DependentUpon>ProdMonoFr.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProdMonoFr.Master.designer.cs">
+      <DependentUpon>ProdMonoFr.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProdMonoFr.Master" />
+    <Content Include="distro\4.0.20\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="distro\4.0.20\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="distro\4.0.20\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="distro\4.0.20\js\jquery\1.11.1\jquery.min.map" />
+    <Content Include="distro\4.0.20\js\jquery\2.1.4\jquery.min.map" />
+    <Content Include="distro\4.0.20\js\polyfills\datalist.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\datalist_dynamic.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\datepicker.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\details.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\jawsariafixes.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\meter.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\mobile.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\progress.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\slider.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\slider_wrapper.min.js.map" />
+    <Content Include="distro\4.0.20\js\polyfills\svg.min.js.map" />
+    <Content Include="distro\4.0.20\js\wet-boew.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="distro\4.0.20\wet-boew\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="distro\4.0.20\wet-boew\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="distro\4.0.20\wet-boew\js\jquery\1.11.1\jquery.min.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\jquery\2.1.4\jquery.min.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\datalist.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\datalist_dynamic.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\datepicker.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\details.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\jawsariafixes.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\meter.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\mobile.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\progress.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\slider.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\slider_wrapper.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\polyfills\svg.min.js.map" />
+    <Content Include="distro\4.0.20\wet-boew\js\wet-boew.min.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.fr-CA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.fr-CA.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource11.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49188</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49188/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:49188/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

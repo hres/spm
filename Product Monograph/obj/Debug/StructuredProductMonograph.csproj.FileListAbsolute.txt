@@ -1,0 +1,6 @@
+C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\bin\StructuredProductMonograph.dll.config
+C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\bin\StructuredProductMonograph.dll
+C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\bin\StructuredProductMonograph.pdb
+C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\obj\Debug\StructuredProductMonograph.dll
+C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\obj\Debug\StructuredProductMonograph.pdb
+C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\obj\Debug\StructuredProductMonograph.csprojResolveAssemblyReference.cache

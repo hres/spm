@@ -1,0 +1,78 @@
+********** 2:28:39 PM **********
+Exception Type: System.ArgumentNullException
+Exception: Value cannot be null.
+Parameter name: value
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   at StructuredProductMonograph.Models.SpmRepository.AddAddress(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\SpmRepository.cs:line 252
+   at StructuredProductMonograph.Controller.spmController.createAuthor(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 43
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 346
+
+********** 2:29:25 PM **********
+Exception Type: System.ArgumentNullException
+Exception: Value cannot be null.
+Parameter name: value
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   at StructuredProductMonograph.Models.SpmRepository.AddAddress(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\SpmRepository.cs:line 252
+   at StructuredProductMonograph.Controller.spmController.createAuthor(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 43
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 346
+
+********** 2:30:57 PM **********
+Exception Type: System.ArgumentNullException
+Exception: Value cannot be null.
+Parameter name: value
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   at StructuredProductMonograph.Models.SpmRepository.AddAddress(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\SpmRepository.cs:line 252
+   at StructuredProductMonograph.Controller.spmController.createAuthor(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 43
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 346
+
+********** 2:31:38 PM **********
+Exception Type: System.ArgumentNullException
+Exception: Value cannot be null.
+Parameter name: value
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   at StructuredProductMonograph.Models.SpmRepository.AddAddress(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\SpmRepository.cs:line 252
+   at StructuredProductMonograph.Controller.spmController.createAuthor(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 43
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 346
+
+********** 3:36:05 PM **********
+Inner Exception Type: System.ArgumentException
+Inner Exception: An item with the same key has already been added.
+Inner Source: mscorlib
+Inner Stack Trace: 
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at StructuredProductMonograph.Models.CodeCollection..cctor() in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\CodeMethod.cs:line 58
+Exception Type: System.TypeInitializationException
+Exception: The type initializer for 'StructuredProductMonograph.Models.CodeCollection' threw an exception.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at StructuredProductMonograph.Models.SectionRepository.CreateSection(CodeEnum codeEnum, String roodID, String text, Boolean allowText) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\SectionRepository.cs:line 17
+   at StructuredProductMonograph.Controller.spmController.createComponentByCode(CodeEnum code, String rootID, String text, Boolean allowText) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 20
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 360
+
+********** 3:37:48 PM **********
+Inner Exception Type: System.ArgumentException
+Inner Exception: An item with the same key has already been added.
+Inner Source: mscorlib
+Inner Stack Trace: 
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at StructuredProductMonograph.Models.CodeCollection..cctor() in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\CodeMethod.cs:line 58
+Exception Type: System.TypeInitializationException
+Exception: The type initializer for 'StructuredProductMonograph.Models.CodeCollection' threw an exception.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at StructuredProductMonograph.Models.SectionRepository.CreateSection(CodeEnum codeEnum, String roodID, String text, Boolean allowText) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\SectionRepository.cs:line 17
+   at StructuredProductMonograph.Controller.spmController.createComponentByCode(CodeEnum code, String rootID, String text, Boolean allowText) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 20
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 360
+

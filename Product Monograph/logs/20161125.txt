@@ -1,0 +1,18 @@
+********** 2:30:59 PM **********
+Exception Type: System.NotSupportedException
+Exception: Memory stream is not expandable.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.IO.MemoryStream.set_Capacity(Int32 value)
+   at System.IO.MemoryStream.EnsureCapacity(Int32 value)
+   at System.IO.MemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.Xml.XmlUtf8RawTextWriter.FlushBuffer()
+   at System.Xml.XmlUtf8RawTextWriter.Flush()
+   at System.Xml.XmlWellFormedWriter.Close()
+   at System.Xml.XmlWriter.Dispose(Boolean disposing)
+   at System.Xml.XmlWriter.Dispose()
+   at System.Xml.Linq.XDocument.Save(Stream stream, SaveOptions options)
+   at System.Xml.Linq.XDocument.Save(Stream stream)
+   at StructuredProductMonograph.Helpers.Common.SaveXmlFile(XDocument doc) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Helpers\Common.cs:line 79
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 300
+

@@ -1,0 +1,99 @@
+********** 1:41:23 PM **********
+Exception Type: System.Web.HttpException
+Exception: Cannot redirect after HTTP headers have been sent.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.RedirectPermanent(String url)
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 565
+
+********** 1:42:57 PM **********
+Exception Type: System.Web.HttpException
+Exception: Cannot redirect after HTTP headers have been sent.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 568
+
+********** 2:03:27 PM **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at Product_Monograph.Coverpage.SaveInMemory() in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 316
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 551
+
+********** 2:05:19 PM **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at Product_Monograph.Coverpage.SaveInMemory() in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 316
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 551
+
+********** 2:06:30 PM **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at Product_Monograph.Coverpage.SaveInMemory() in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 316
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 551
+
+********** 2:08:09 PM **********
+Exception Type: System.Web.HttpException
+Exception: Cannot redirect after HTTP headers have been sent.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 565
+
+********** 2:09:45 PM **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at Product_Monograph.Coverpage.SaveInMemory() in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 316
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 551
+
+********** 2:10:33 PM **********
+Exception Type: System.Web.HttpException
+Exception: Cannot redirect after HTTP headers have been sent.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 565
+
+********** 2:14:49 PM **********
+Inner Exception Type: System.Web.HttpException
+Inner Exception: Server cannot set content type after HTTP headers have been sent.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.HttpResponse.set_ContentType(String value)
+   at System.Web.UI.Page.SetIntrinsics(HttpContext context, Boolean allowAsync)
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.partone_aspx.ProcessRequest(HttpContext context) in c:\Users\jangyoung\AppData\Local\Temp\Temporary ASP.NET Files\root\e8375bcc\8a0baf53\App_Web_3nbohifl.2.cs:line 0
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+Exception Type: System.Web.HttpException
+Exception: Error executing child request for PartOne.aspx.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path)
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 566
+
+********** 3:31:09 PM **********
+Exception Type: System.Web.HttpException
+Exception: Cannot redirect after HTTP headers have been sent.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Product_Monograph.Coverpage.btnGoNextPage_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 583
+   at Product_Monograph.Coverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\pmp\Product Monograph\Coverpage.aspx.cs:line 565
+

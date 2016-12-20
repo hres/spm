@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<controlledlist>
+  <items id="60" name="Scheduling Symbol" fra_name="Scheduling Symbol" oid="">
+    <item code="1"   name="Pr"    fra_name="Pr" definition="Pr" fra_definition="Pr"/>
+    <item code="2"   name="N"     fra_name="N"  definition="N"  fra_definition="N"/>
+    <item code="3"   name="CT"    fra_name="CT" definition="CT" fra_definition="CT"/>
+    <item code="4"   name="C"     fra_name="C"  definition="C"  fra_definition="C"/>  
+  </items>
+  <items id="110" name="Pharmaceutical Standard" fra_name="Pharmaceutical Standard" oid="">
+    <item code="1"   name="BP"    fra_name="BP" definition="BP" fra_definition="BP"/>
+    <item code="2"   name="BPC"   fra_name="BPC" definition="BPC" fra_definition="BPC"/>
+    <item code="4"   name="CSD"   fra_name="CSD" definition="CSD" fra_definition="CSD"/>
+    <item code="5"   name="MFR"   fra_name="MFR" definition="MFR" fra_definition="MFR"/>
+    <item code="6"   name="NF"    fra_name="NF" definition="NF" fra_definition="NF"/>
+    <item code="7"   name="USP"   fra_name="USP" definition="USP" fra_definition="USP"/>
+    <item code="8"   name="PH EUR" fra_name="PH EUR" definition="PH EUR" fra_definition="PH EUR"/>
+  </items>
+  <items id="120" name="Therapeutic Classification" fra_name="Therapeutic Classification" oid="">
+    <item code="A01AA51"   name="SODIUM FLUORIDE, COMBINATIONS" fra_name=""                 definition="DENTAL AGENTS" fra_definition="DENTAL AGENTS"/>
+    <item code="A01AB03"   name="CHLORHEXIDINE"                 fra_name=""                 definition="DENTAL AGENTS" fra_definition="DENTAL AGENTS"/>
+    <item code="A01AB22"   name="DOXYCYCLINE"                   fra_name=""                 definition="ANTIBACTERIALS" fra_definition="ANTIBACTERIALS"/>
+    <item code="A01AB23"   name="MINOCYCLINE"                   fra_name=""                 definition="ANTIBACTERIALS" fra_definition="ANTIBACTERIALS"/>
+    <item code="A01AC01"   name="TRIAMCINOLONE"                 fra_name=""                 definition="ANTI-INFLAMMATORY AGENTS" fra_definition="ANTI-INFLAMMATORY AGENTS"/>
+    <item code="A01AC52"   name="DEXAMETHASONE, COMBINATIONS *" fra_name=""                 definition="DENTAL AGENTS" fra_definition="DENTAL AGENTS"/>
+    <item code="A01AD  "   name="OTHER AGENTS FOR LOCAL ORAL TREATMENT" fra_name=""         definition="DENTAL AGENTS" fra_definition="DENTAL AGENTS"/>
+    <item code="A01AD02"   name="BENZYDAMINE"                   fra_name=""                 definition="NONSTEROIDAL ANTI-INFLAMMATORY AGENTS" fra_definition="NONSTEROIDAL ANTI-INFLAMMATORY AGENTS"/>
+    <item code="A01AD11"   name="VARIOUS"                       fra_name=""                 definition="LOCAL ANESTHETICS" fra_definition="LOCAL ANESTHETICS"/>
+    <item code="A02AF02"   name="ORDINARY SALT COMBINATIONS AND ANTIFLATULENTS" fra_name="" definition="ANTACIDS AND ADSORBENTS" fra_definition="ANTACIDS AND ADSORBENTS"/>
+ </items>
+  <items id="210" name="Warnings And Precautions" fra_name="Warnings And Precautions" oid="">
+    <item code="210-10"   name="General"                          fra_name="General"                         definition="General" fra_definition="General"/>
+    <item code="210-20"   name="Carcinogenesis And Mutagenesis"   fra_name="Carcinogenesis And Mutagenesis"  definition="Carcinogenesis And Mutagenesis" fra_definition="Carcinogenesis And Mutagenesis"/>
+    <item code="210-30"   name="Cardiovascular"                   fra_name="Cardiovascular"                  definition="Cardiovascular"  fra_definition="Cardiovascular"/>
+    <item code="210-210"   name="Special Populations"             fra_name="Special Populations"             definition="Special Populations"  fra_definition="Special Populations"/>
+    <item code="210-220"   name="Special Populations - Misc."     fra_name="Special Populations - Misc."     definition="Special Populations - Misc."  fra_definition="Special Populations - Misc."/>
+    <item code="210-230"   name="Monitoring And Laboratory Tests" fra_name="Monitoring And Laboratory Tests" definition="Monitoring And Laboratory Tests" fra_definition="Monitoring And Laboratory Tests"/>
+  </items>
+  <items id="210-210" name="Special Populations" fra_name="Special Populations" oid="">
+    <item code="210-210-10"   name="Pregnant Women"  fra_name="Pregnant Women" definition="Pregnant Women" fra_definition="Pregnant Women"/>
+    <item code="210-210-20"   name="Nursing Women"   fra_name="Nursing Women"  definition="Nursing Women"  fra_definition="Nursing Women"/>
+    <item code="210-210-30"   name="Pediatrics"      fra_name="Pediatrics"     definition="Pediatrics"     fra_definition="Pediatrics"/>
+    <item code="210-210-40"   name="Geriatrics"      fra_name="Geriatrics"     definition="Geriatrics"     fra_definition="Geriatrics"/>
+  </items>
+  <items id="260-30" name="Pharmacokinetics" fra_name="Pharmacokinetics" oid="">
+    <item code="260-30-10"   name="Absorption"     fra_name="Absorption" definition="Absorption"       fra_definition=""/>
+    <item code="260-30-20"   name="Distribution"   fra_name="Distribution"  definition="Distribution"  fra_definition=""/>
+    <item code="260-30-30"   name="Metabolism"      fra_name="Pediatrics"     definition="Pediatrics"     fra_definition=""/>
+    <item code="260-30-50"   name="Special Populations And Conditions"      fra_name="Special Populations And Conditions"     definition="Geriatrics"     fra_definition=""/>
+  </items>
+  <items id="260-30-50" name="Special Populations And Conditions" fra_name="Special Populations And Conditions" oid="">
+    <item code="260-30-50-10"   name="Pediatrics"     fra_name="Pediatrics" definition="Pediatrics"       fra_definition=""/>
+    <item code="260-30-50-20"   name="Geriatrics"     fra_name="Geriatrics"  definition="Distribution"  fra_definition=""/>
+    <item code="260-30-50-30"   name="Gender"         fra_name="Gender"     definition="Pediatrics"     fra_definition=""/>
+    <item code="260-30-50-40"   name="Race"           fra_name="Race"     definition="Geriatrics"     fra_definition=""/>
+  </items>
+</controlledlist>
+
+

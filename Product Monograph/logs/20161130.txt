@@ -1,0 +1,11 @@
+********** 9:39:57 AM **********
+Exception Type: System.ArgumentNullException
+Exception: Value cannot be null.
+Parameter name: value
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   at StructuredProductMonograph.Models.SpmRepository.AddAddress(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\SpmRepository.cs:line 252
+   at StructuredProductMonograph.Controller.spmController.createAuthor(List`1 items) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 43
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 354
+

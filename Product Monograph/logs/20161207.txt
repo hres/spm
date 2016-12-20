@@ -1,0 +1,30 @@
+********** 1:58:44 PM **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at StructuredProductMonograph.Controller.spmController.createTempSection(CodeEnum codeName, String rootID, Dictionary`2 dict) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 84
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 536
+
+********** 2:23:13 PM **********
+Exception Type: System.ArgumentNullException
+Exception: Value cannot be null.
+Parameter name: value
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   at StructuredProductMonograph.Models.SpmRepository.AddComponentTemp(Section item) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\SpmRepository.cs:line 155
+   at StructuredProductMonograph.Controller.spmController.createTempSection(CodeEnum codeName, String rootID, Dictionary`2 dict) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 103
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 536
+
+********** 2:30:01 PM **********
+Exception Type: System.ArgumentNullException
+Exception: Value cannot be null.
+Parameter name: value
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   at StructuredProductMonograph.Models.SpmRepository.AddComponentTemp(Section item) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Models\SpmRepository.cs:line 163
+   at StructuredProductMonograph.Controller.spmController.createTempSection(CodeEnum codeName, String rootID, Dictionary`2 dict) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 103
+   at StructuredProductMonograph.spmCoverpage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\spmCoverpage.aspx.cs:line 536
+

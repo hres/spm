@@ -1,0 +1,7 @@
+********** 3:12:39 PM **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at StructuredProductMonograph.titlePage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\titlePage.aspx.cs:line 402
+

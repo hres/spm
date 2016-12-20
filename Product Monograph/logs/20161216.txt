@@ -1,0 +1,8 @@
+********** 10:07:47 AM **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: Coverpage-btnSaveDraft_Click
+Stack Trace: 
+   at StructuredProductMonograph.Controller.spmController.createComponentBySectionList(CodeEnum codeName, List`1 list) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Controller\spmController.cs:line 95
+   at StructuredProductMonograph.titlePage.btnSaveDraft_Click(Object sender, EventArgs e) in C:\Users\jangyoung\Documents\Visual Studio 2015\Projects\spm\Product Monograph\Views\titlePage.aspx.cs:line 832
+
